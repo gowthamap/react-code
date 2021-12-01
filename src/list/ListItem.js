@@ -1,20 +1,22 @@
 import React from 'react';
+import Label from './Label';
 import './ListItem.css';
 
-function ListItem() {
+function ListItem(props) {
+  console.log(props);
     return (
       <div className="list-item">
         <hr />
         <div className="list-title">
-          <h4>My Title One</h4>
+          <h4>{props.title}</h4>
         </div>
         <div className="list-descr">
-          This is a very big description
+          {props.descr}
         </div>
         <div className="list-label">
-          <span>Label 1</span>
-          <span>Label 2</span>
-          <span>Label 3</span>
+          <Label onAction={() => {
+            console.log('Parent Clicked');
+          }} isActive={props.isActive} />
         </div>
         <hr />
       </div>

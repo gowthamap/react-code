@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ListItem from './list/ListItem';
-import Label from './list/Label';
+// import ListItem from './list/ListItem';
+// import Label from './list/Label';
+import List from './list/List';
 
 
 
@@ -19,16 +20,7 @@ ReactDOM.render(
       <span>Logout</span>
     </div>
     <div className="app-body">
-      <div className="app-list">
-        <ListItem />
-        <Label />
-        <ListItem />
-        <Label />
-        <ListItem />
-        <Label />
-        <ListItem /> 
-        <Label />
-      </div>
+      <List />
     </div>
   </div>,
 
